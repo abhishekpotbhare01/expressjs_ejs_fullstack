@@ -12,11 +12,12 @@ const connection = require('./db/MysqlConnection')
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
-app.set(express.static(path.join(__dirname, "public")))
+app.set(express.static(path.join(__dirname, 'public')))
 
 //add all middlewares
 
 app.use(bodyparser.urlencoded({ extended: false }))
+
 app.use("/css", express.static(path.resolve(__dirname, "public/css")));
 
 app.use("/js", express.static(path.resolve(__dirname, "public/js")));

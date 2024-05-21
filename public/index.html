@@ -5,11 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" src="../public/bootstrap.css">
+
+    <script src="../public/bootstrap.js"></script> -->
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+
 
     <style>
-        #container{
+        #container {
             display: flex;
             justify-content: center;
+        }
+
+        #form1 {
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid black;
+            height: 300px;
+            width: 400px;
         }
     </style>
 </head>
@@ -17,8 +30,29 @@
 <body>
     <div id="container">
         <div id="div1">
-  
-            <marquee behavior="scroll" direction="left"><h3>Welcome to Shooping App</h3></marquee>  
+
+            <marquee behavior="scroll" direction="left">
+                <h3>Welcome to Shooping App</h3>
+            </marquee>
+
+            <div id="form1">
+                <form action="/validate-login" method="post">
+
+                    <br>
+                    <br>
+
+
+
+                    <label for="uname">Username</label> <input type="text" name="uname" id="uname" /> <br>
+
+                    <label for="pwd">Password</label> <input type="text" name="pwd" id="pwd" /> <br><br>
+                    <button class="btn btn-primary" type="submit">Login</button>
+
+                    <div>New User ? <a href="#">Register here</a></div>
+
+
+                </form>
+            </div>
 
         </div>
     </div>
